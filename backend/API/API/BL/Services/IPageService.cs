@@ -1,13 +1,17 @@
-﻿using API.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace API.Service
 {
+    /// <summary>
+    /// Интерфейс для работы с страницой
+    /// </summary>
     public interface IPageService
     {
+        /// <summary>
+        /// Метод работы со строкой
+        /// </summary>
+        /// <param name="page"></param>
+        /// <returns></returns>
         String GetString(string page);
     }
 }

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Models
+﻿namespace API.Models
 {
+    /// <summary>
+    /// Модель страницы
+    /// </summary>
     public class PageModel
     {
         /// <summary>
