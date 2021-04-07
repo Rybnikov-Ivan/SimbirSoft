@@ -12,6 +12,6 @@ namespace API.Service
         /// </summary>
         /// <param name="page"></param>
         /// <returns></returns>
-        String GetString(string page);
+        void GetString(string page);
     }
 }

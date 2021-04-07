@@ -31,10 +31,15 @@ namespace API.Contollers
         [HttpPost("api/pageitems")]
         public IActionResult GetString([FromBody]string page)
         {
-            Console.WriteLine($"Введенный URL: {page}");
-            var str = this._pageService.GetString(page);
+            if (page == string.Empty)
+            {
+                throw new ArgumentException(page);
+            }
 
-            return this.Ok(str);
+            Console.WriteLine($"Введенный URL: {page}");
+            this._pageService.GetString(page);
+
+            return this.Ok();
         }
     }
 }
